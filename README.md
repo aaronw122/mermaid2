@@ -6,9 +6,9 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
     activate server
-    PUSH {content:req.body.note, date: newDate(),}
+    server->>server: PUSH {content:req.body.note, date: newDate(),}
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
