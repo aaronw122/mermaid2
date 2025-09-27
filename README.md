@@ -1,5 +1,11 @@
 # mermaid2
+
+```mermaid
+  info
+```
+
 mermaid diagram
+
 
 
 sequenceDiagram
