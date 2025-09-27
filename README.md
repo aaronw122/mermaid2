@@ -13,7 +13,7 @@ sequenceDiagram
 
     note left of server: the server pushes the note to the data.json array
 
-    server->>browser: URL redirection message
+    server-->>browser: URL redirection message
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
