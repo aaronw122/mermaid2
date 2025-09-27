@@ -11,6 +11,8 @@ sequenceDiagram
     server->>server: PUSH {content:req.body.note, date: newDate(),}
     deactivate server
 
+    note left of server: the server pushes the note to the data.json array
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
